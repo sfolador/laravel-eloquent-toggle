@@ -14,38 +14,34 @@ You can install the package via composer:
 ```bash
 composer require sfolador/laravel-eloquent-toggle
 ```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-eloquent-toggle-migrations"
-php artisan migrate
-```
-
-You can publish the config file with:
-
-```bash
-php artisan vendor:publish --tag="laravel-eloquent-toggle-config"
-```
-
 This is the contents of the published config file:
 
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-eloquent-toggle-views"
-```
 
 ## Usage
 
+To use a _toggle_ just use casts on your model:
+
 ```php
-$laravelEloquentToggle = new Sfolador\LaravelEloquentToggle();
-echo $laravelEloquentToggle->echoPhrase('Hello, Sfolador!');
+use Illuminate\Database\Eloquent\Model;
+use Sfolador\LaravelEloquentToggle\Casts\Boolean;
+
+class User extends Model
+{
+    protected $casts = [
+        'active' => Boolean::class,
+    ];
+    ...
+}
+```
+then you can use it like this:
+
+```php
+$user = new User();
+$user->active = true;
+
+$user->active->toggle(); // false
+
+$isActive = $user->active->value(); // false
 ```
 
 ## Testing

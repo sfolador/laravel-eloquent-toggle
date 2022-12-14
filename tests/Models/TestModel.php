@@ -9,6 +9,7 @@ use Sfolador\LaravelEloquentToggle\Casts\Boolean;
 class TestModel extends Model
 {
     use HasFactory;
+
     protected $casts = [
         'active' => Boolean::class,
     ];

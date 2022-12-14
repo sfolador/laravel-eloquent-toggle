@@ -3,9 +3,9 @@
 namespace Sfolador\LaravelEloquentToggle\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use function Orchestra\Testbench\artisan;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Sfolador\LaravelEloquentToggle\LaravelEloquentToggleServiceProvider;
-use function Orchestra\Testbench\artisan;
 
 class TestCase extends Orchestra
 {

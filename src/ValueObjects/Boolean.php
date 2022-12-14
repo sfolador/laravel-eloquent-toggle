@@ -2,9 +2,6 @@
 
 namespace Sfolador\LaravelEloquentToggle\ValueObjects;
 
-
-
-
 class Boolean
 {
     private bool $value;
@@ -31,13 +28,11 @@ class Boolean
 
     public function toggle(): void
     {
-        $this->value = !$this->value;
+        $this->value = ! $this->value;
     }
 
     public function __toString(): string
     {
         return $this->value ? 'true' : 'false';
     }
-
-
 }

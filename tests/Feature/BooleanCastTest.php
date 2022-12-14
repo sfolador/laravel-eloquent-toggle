@@ -1,6 +1,5 @@
 <?php
 
-
 use Illuminate\Support\Str;
 use Sfolador\LaravelEloquentToggle\Tests\Models\TestModel;
 
@@ -15,7 +14,6 @@ it('can be casted to a boolean false', function () {
     $model->active = false;
     expect($model->active->value())->toBeFalse();
 });
-
 
 it('can be casted to a boolean from string', function () {
     $model = new TestModel();
@@ -40,7 +38,6 @@ it('is a boolean in array', function () {
     expect($model->toArray())->toEqual([
         'active' => true,
     ]);
-
 });
 
 it('is a boolean in json', function () {
@@ -48,10 +45,7 @@ it('is a boolean in json', function () {
     $model->active = false;
     $model->active->toggle();
 
-
     expect($model->toJson())->toEqual(json_encode([
         'active' => true,
     ]));
 });
-
-

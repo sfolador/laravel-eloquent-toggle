@@ -44,12 +44,3 @@ it('can be converted to string from false', function () {
     expect((string) $boolean)->toBe('false');
 });
 
-it('can be returned in json as a boolean true', function () {
-    $boolean = Boolean::true();
-    expect($boolean->toJson())->toBeTrue();
-});
-
-it('can be returned in json as a boolean false', function () {
-    $boolean = Boolean::false();
-    expect($boolean->toJson())->toBeFalse();
-});

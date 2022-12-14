@@ -43,4 +43,3 @@ it('can be converted to string from false', function () {
     $boolean = Boolean::false();
     expect((string) $boolean)->toBe('false');
 });
-

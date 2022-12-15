@@ -15,9 +15,6 @@ You can install the package via composer:
 ```bash
 composer require sfolador/laravel-eloquent-toggle
 ```
-This is the contents of the published config file:
-
-
 ## Usage
 
 To use a _toggle_ just use casts on your model:

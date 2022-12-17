@@ -16,10 +16,6 @@ class LaravelEloquentToggleServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('laravel-eloquent-toggle')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-eloquent-toggle_table')
-            ->hasCommand(LaravelEloquentToggleCommand::class);
+            ->name('laravel-eloquent-toggle');
     }
 }

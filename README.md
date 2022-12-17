@@ -3,8 +3,8 @@
 
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/sfolador/laravel-eloquent-toggle.svg?style=flat-square)](https://packagist.org/packages/sfolador/laravel-eloquent-toggle)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/sfolador/laravel-eloquent-toggle/run-tests?label=tests)](https://github.com/sfolador/laravel-eloquent-toggle/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/sfolador/laravel-eloquent-toggle/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/sfolador/laravel-eloquent-toggle/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/sfolador/laravel-eloquent-toggle/run-tests.yml?branch=main)](https://img.shields.io/github/actions/workflow/status/sfolador/laravel-eloquent-toggle/run-tests.yml?branch=main)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/sfolador/laravel-eloquent-toggle/fix-php-code-style-issues.yml?branch=main)](https://img.shields.io/github/actions/workflow/status/sfolador/laravel-eloquent-toggle/fix-php-code-style-issues.yml?branch=main)
 [![Total Downloads](https://img.shields.io/packagist/dt/sfolador/laravel-eloquent-toggle.svg?style=flat-square)](https://packagist.org/packages/sfolador/laravel-eloquent-toggle)
 
 

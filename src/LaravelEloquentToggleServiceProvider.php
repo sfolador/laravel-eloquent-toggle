@@ -2,7 +2,6 @@
 
 namespace Sfolador\LaravelEloquentToggle;
 
-use Sfolador\LaravelEloquentToggle\Commands\LaravelEloquentToggleCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
